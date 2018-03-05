@@ -25,7 +25,7 @@ with open(datafile_path,'r') as file_input:
     counter = 0                             # Counter to keep track of number of lines in file
     Data = []                               # initializing empty list for values (becomes list of list)
 
-    new_path = 'data.txt'                   # Name of the text file where the values will be saved
+    new_path = 'data.txt'                   # Name of the text file where the values will be saved.
     new_data = open(new_path, "w")          # initializing this new text file.
     mass_string = []                        # initializing variables
     mass = []
