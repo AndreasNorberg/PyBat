@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt   # Plottepakke
 # ------------------------------------------------------
 
 ########################################################
-# Importing text file from your data folder
+# Importing text file from your data folder  
 ########################################################
 
 # Specify complete filename (including adress) here:
@@ -35,7 +35,7 @@ with open(datafile_path,'r') as file_input:
             new_data.write(this_line)           # Writing each line to new text file
             Data.append(this_line.split("\t"))  # Line shift in text file
         # Want to know the mass for specfic capacity:
-        if "Characteristic mass" in line:       # Used for specific capacity
+        if "Characteristic mass" in line:       # Used for specific capacity. 
             mass_string = ((line.split('Characteristic mass : '))[1].split(' mg')[0]) # Extracting mass as string
             mass = (float(mass_string.replace(",", ".")))/1000  # Converting string to number and from mg to grams
         counter = counter + 1                   # Increase counter for each line read
