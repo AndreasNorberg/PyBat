@@ -1,0 +1,29 @@
+import numpy as np                # Matrise pakke
+import pandas as pd               # Database pakke
+import matplotlib.pyplot as plt   # Plottepakke
+import strToFloat
+import importData as id
+import ConvertToPandas
+
+########       Script for importing and saving data as pickle
+## - Takes data_url (location of datafile) and cell name (including path to where to save) as input
+## - Convert to dataframe (values as strings) and save the dataframe as pickle
+## - Return a confirmation message
+
+def import_and_store(data_url, cell_name_path):
+
+    df = ConvertToPandas.biologic(data_url)
+    df.to_pickle(cell_name_path)  # where to save it, usually as a .pkl
+    print ("Eureka!\n" + cell_name_path + "\nwas saved as pickle")
+    return
+
+#####    Script for testing function
+##      Inputs:
+#Location of data
+data_url = '/Users\hennika\OneDrive - NTNU\PhD\Results\Cycling\B1_combi_t01_02APC-THF_2_1Vto0_2V_0_01C_CE2.mpt'
+
+##      Desired variable
+cell_name_path1 = '/Users\hennika\OneDrive - NTNU\PhD\Results\Cycling\Ti2C_t02_01'
+
+##      Outputs
+import_and_store(data_url, cell_name_path1)
