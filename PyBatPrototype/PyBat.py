@@ -30,9 +30,7 @@ Plots = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Plots/'
 
 #------------------------------General info-------------------------
 
-counter = 1
-counter2 = 2
-print("hellow world")
+print("Gi test)
 
 #Innput:
 
