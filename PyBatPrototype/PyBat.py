@@ -30,7 +30,7 @@ Plots = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Plots/'
 
 #------------------------------General info-------------------------
 
-
+print("Gi test)
 
 #Innput:
 
