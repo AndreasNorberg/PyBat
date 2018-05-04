@@ -31,7 +31,7 @@ Plots = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Plots/'
 #------------------------------General info-------------------------
 
 
-print('Test: Daniel er snill og søt ' )
+print('Hennings stuff' )
 
 #Innput:
 
