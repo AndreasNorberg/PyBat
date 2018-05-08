@@ -11,13 +11,13 @@ import FindMinLength              # Returning minimum length of inputs
 
 def Incremental(df, char_mass):
 
-    discharge_incr_float = strToFloat.strToFloat(df['discharge_incr'].tolist())  # Extracting incremental discharge as float
+    discharge_incr_float = df['discharge_incr'].astype(float)   # Extracting incremental discharge as float
     discharge_incr_spec = np.divide(discharge_incr_float,float(char_mass)/1000)  # Divide by mass in grams to obtain specific capacity.
 
-    charge_incr_float   = strToFloat.strToFloat(df['charge_incr'].tolist())      # Extracting incremental discharge as float
+    charge_incr_float   = df['charge_incr'].astype(float)     # Extracting incremental discharge as float
     charge_incr_spec    = np.divide(charge_incr_float,float(char_mass)/1000)     # Divide by mass in grams to obtain specific capacity.
 
-    cap_incr_float   = strToFloat.strToFloat(df['cap_incr'].tolist())            # Extracting incremental discharge as float
+    cap_incr_float   = df['cap_incr'].astype(float)             # Extracting incremental discharge as float
     cap_incr_spec    = np.divide(cap_incr_float,float(char_mass)/1000)           # Divide by mass in grams to obtain specific capacity.
 
     df['discharge_incr_spec'], df['charge_incr_spec'], df['cap_incr_spec'] = [discharge_incr_spec, charge_incr_spec, cap_incr_spec] # Add them as new columns.
