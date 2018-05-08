@@ -1,14 +1,14 @@
 import numpy as np                # Matrise pakke
 import pandas as pd               # Database pakke
 import matplotlib.pyplot as plt   # Plottepakke
-import strToFloat
-import importData as id
+import StrToFloat
+import ImportData as id
 import AddSpecificCapacity
 import FixUnevenLength            # Makes two list same length by removing or adding element
 import sys                        # For exiting script among other
 import ConvertToPandas
 import Plotter
-import accessingData
+import AccessData
 import PyBat
 from PyBat import Database,Plots
 
