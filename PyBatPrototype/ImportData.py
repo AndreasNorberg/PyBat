@@ -38,8 +38,7 @@ def importLanhe(data_url):
         counter = 1
 
         for line in file_input:  # Reads the data from the data_url line by line.
-            line = line.replace(",",
-                                    ".")  # Replaces "," with "." so that it is possible to convert the data from a string to a float.
+            line = line.replace(",",".")  # Replaces "," with "." so that it is possible to convert the data from a string to a float.
             line = line.rstrip()
             if counter > 1:  # Evaluates if the line contains data or
                 Data.append(line.split("\t"))  # Appendas data from a give line to the Data list

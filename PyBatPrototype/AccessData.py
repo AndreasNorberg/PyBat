@@ -6,8 +6,8 @@
 import numpy as np                # Matrise pakke
 import pandas as pd               # Database pakke
 import matplotlib.pyplot as plt   # Plottepakke
-import strToFloat
-import importData as id
+import StrToFloat
+import ImportData as id
 import ConvertToPandas
 from PyBat import Database
 from PyBat import CellDatabase
@@ -15,18 +15,18 @@ from PyBat import CellDatabase
 
 
 
-def accessingData(CellKey,variable):
+def AccessData(CellKey,variable):
 
-    df = pd.read_pickle((Database + 'CellDatabase'+ CellKey + '.pkl'))
+    df = pd.read_pickle((CellDatabase + CellKey + '.pkl'))
 
     output = strToFloat.strToFloat(df[variable].tolist())    #Extracts the wanted variable "variable" from the dataframe, converts it to a string and returns it.
 
     return output
 
 
-def accessingCellData(CellKey):
+def AccessCellData(CellKey):
 
-    df = pd.read_pickle(Database + 'CellDatabase'+ CellKey + '.pkl')
+    df = pd.read_pickle(CellDatabase + CellKey + '.pkl')
     df = df.astype(float)
     return df
 
