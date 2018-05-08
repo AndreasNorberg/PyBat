@@ -23,15 +23,13 @@ def About(data_storage, CellKey):
 
 #Locations of folders: Can be imported by writing "from PyBat import Database"
 Database = 'C:/users/andnor/OneDrive - NTNU/Diatoma/Experimental/Database/'
-CellDatabase = 'C:/users/andnor/OneDrive - NTNU/Diatoma/Experimental/Database/CellDatabase/'
+CellDatabase = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Database/CellDatabase/'
 Plots = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Plots/'
 
 
 
 #------------------------------General info-------------------------
 
-
-print('Daniel sitt stuff er viktigere' )
 
 #Innput:
 
@@ -40,7 +38,7 @@ Cell ='SiO2MSC4_2'
 
 
 
-#ConvertToPandas.biologic(Data, Cell, CellDatabase)
+ConvertToPandas.biologic(Data, Cell, CellDatabase)
 #ConvertToPandas.lanhe(Data,Cell, Database)
 #About(Database,Cell)
 #------------------------------Plotting------------------------------
@@ -49,11 +47,11 @@ Cell ='SiO2MSC4_2'
 #y1 = 'potential'
 
 
-pickle_name_1 = CellDatabase +'SiO2MSC4_1.pkl'
-pickle_name_2 = CellDatabase +'SiO2MSC4_2.pkl'
+#pickle_name_1 = CellDatabase +'SiO2MSC4_1.pkl'
+#pickle_name_2 = CellDatabase +'SiO2MSC4_2.pkl'
 
 
-Plotter.plotter(pickle1=pickle_name_1, pickle2=pickle_name_2, x1='cap_incr_spec', y1='potential', legend=['Cell 1', 'Cell 2'], legend_loc=1)
+#Plotter.plotter(pickle1=pickle_name_1, pickle2=pickle_name_2, x1='cap_incr_spec', y1='potential', legend=['Cell 1', 'Cell 2'], legend_loc=1)
 #Plotter.plotter(pickle1=pickle_name_1, pickle2=pickle_name_2, x1='cap_incr_spec', y1='potential', cycles1=[0,1,5,10], color1='blue', color_scheme2='magma',legend=['Cell 1', 'Cell 2'], legend_loc=1)
 
 

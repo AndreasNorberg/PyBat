@@ -4,7 +4,7 @@
 import numpy as np                # Matrise pakke
 import pandas as pd               # Database pakke
 import matplotlib.pyplot as plt   # Plottepakke
-import strToFloat                 # Converts strings to float
+import StrToFloat                 # Converts strings to float
 import FixUnevenLength            # Makes two list same length by removing or adding element
 import sys                        # For exiting script among other
 import FindMinLength              # Returning minimum length of inputs
