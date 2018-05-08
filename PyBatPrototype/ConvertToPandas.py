@@ -14,6 +14,8 @@ def biologic(data_url, CellKey, Database):
 
     Data, char_mass = id.importBiologic(data_url)                     # use ID:importBiologic to import data and the characteristic mass from a bilogic txt file.
 
+
+
     colum_names = Data[0][0:(len(Data[0])-1)]                         # Extracts the name of the colums from the txt file to place them in the dataframe
 
     df = pd.DataFrame(Data[1:],columns=colum_names)                   # Creates the dataframe
@@ -28,13 +30,13 @@ def biologic(data_url, CellKey, Database):
     ##Add additional variables to pandas
 
     try:
-        df = AddSpecificCapacity.Incremental(df, char_mass)
         df = AddSpecificCapacity.Cyclebased(df, char_mass)
-
+        df = AddSpecificCapacity.Incremental(df, char_mass)
 
         cellInfo = [char_mass, float(char_mass)/2.0106]  #Adds characteristic mass and loading to the dataframe cellInfo = [characterisstic mass, loading]
         cellInfo = FixUnevenLength.FillNone(cellInfo,target=len(df['potential']))
         df['CellInfo'] = cellInfo[0]    #CellInfo is for some reason returned as a list of list. Fix this later.
+
     except:
         print('ERROR: Characteristic mass not availible from import document. Neither characteristic mass or loading added to database')
 
