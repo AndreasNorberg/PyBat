@@ -19,7 +19,7 @@ def AccessData(CellKey,variable):
 
     df = pd.read_pickle((CellDatabase + CellKey + '.pkl'))
 
-    output = strToFloat.strToFloat(df[variable].tolist())    #Extracts the wanted variable "variable" from the dataframe, converts it to a string and returns it.
+    output = StrToFloat.strToFloat(df[variable].tolist())    #Extracts the wanted variable "variable" from the dataframe, converts it to a string and returns it.
 
     return output
 
