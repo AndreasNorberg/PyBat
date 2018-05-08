@@ -48,7 +48,7 @@ def lanhe(data_url, CellKey, Database):
 
     df = pd.DataFrame(Data, columns=['Cycle', 'charge_spec', 'discharge_spec', 'QE'])  # Creates the dataframe
 
-    df.to_pickle((Database + 'CellDatabase' + CellKey + '.pkl'))  # Store data as a Pickle
+    df.to_pickle((Database + CellKey + '.pkl'))  # Store data as a Pickle
 
     return df
 
