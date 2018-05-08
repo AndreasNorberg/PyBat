@@ -5,7 +5,7 @@
 import numpy as np                # Matrise pakke
 import pandas as pd               # Database pakke
 import matplotlib.pyplot as plt   # Plottepakke
-import SrToFloat
+import StrToFloat
 
 
 # Function for importing data from Biologic
