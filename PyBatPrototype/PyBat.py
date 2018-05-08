@@ -31,7 +31,6 @@ Plots = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Plots/'
 #------------------------------General info-------------------------
 
 
-
 #Innput:
 
 Data = 'C:/Users/andnor/OneDrive - NTNU/Diatoma/Experimental/Experimental data/Data Transfers/180430/Diatoma/180406/180406_SiO2MSC4_2_ECDEC_Hold48_2mV_CB4.mpt'
